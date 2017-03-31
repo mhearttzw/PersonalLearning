@@ -1,0 +1,17 @@
+{
+  "name": "crawler",
+  "version": "1.0.0",
+  "description": "crawler",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "echelon"
+  ],
+  "author": "echelon",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "0.0.2"
+  }
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Todo</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="wraper">
+	<header>
+		<h3>Echelon-Todo</h3>
+	</header>
+	<div  class="container clearfix">
+		<div class="section classify">
+			<div class="section1-con">
+			   <h3 class="all-task">所有任务(<span id="task-num"></span>)</h3>
+			   <h3 class="all-task-list">分类列表</h3>
+               <div class="all-taskClass"><!--class-cont-->
+               	 
+               </div>
+			</div>
+			<div class="btn" id="newClass">
+				<b>+</b>
+				新增分类
+			</div>
+		</div>
+		<div class="section task-classify">
+			<div class="task-nav">
+				<span id="all-task" class="click" title="点击查看所有的任务">所有</span>
+				<span id="unfinished-task" title="点击查看未完成的任务">未完成</span>
+				<span id="done-task" title="点击查看已完成的任务">已完成</span>
+			</div>
+		 	<div class="task-nav-con"><!--task-list-cont-->
+		 		
+		 	</div>
+		 	<div class="btn" id="newTask">
+		 		<b>+</b>
+		 		新增任务
+		 	</div>
+		</div>
+		<div class="section task-detail" id="section3">
+			<div class="detail done">
+				<h3 class="detail-title">开始你的TODO</h3>
+				<div class="detail-date">2015-7-14</div>
+				<div class="detail-con">这是新的开始，一切的改变都从你执行他开始！</div>
+				<div class="detail-operate">
+					<span id="detail-icon-done" title="点击完成任务">&#xea10;</span>
+					<span id="detail-icon-edit" title="点击编辑任务">&#xe905;</span>
+				</div>
+			</div>
+			<div class="edit">
+				<div class="edit-title">
+					<span class="tips">标题：</span><input type="text" id="title" placeholder="输入标题">
+				</div>
+				<div class="edit-date">
+					<span class="tips">日期：</span><input type="text" id="date" placeholder="输入日期">
+				</div>
+				<div class="edit-con">
+					<textarea name="edit-con" id="task-edit-con" placeholder="请再次输入内容"  cols="30" rows="10"></textarea>
+					<p class="edit-con-tips">字数限制在1000字哦:)</p>
+				</div>
+				<div class="edit-btns">
+					<span id="save" title="点击保存">保存</span>
+					<span id="cancel" title="点击取消">取消</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+    <div class="window">
+			<div class="window-mask"></div>
+			<div class="window-cont">
+				<div class="close">
+					<span class="close-icon" title="close">&#xea0f;</span>
+				</div>
+				<div class="window-cont-addClass">
+					<p>
+						<span class="addClassLine">创建分类于：
+							<select name="class-select" id="class-select">
+								<option value="新建主分类" selected="selected">新建主分类</option>
+							</select></span></p>
+					<p>
+					    <span class="addClassLine">输入分类名：
+					    	<input type="text" id="class-name" length="30">
+					    </span></p>	
+					<p class="window-tips">请输入的字段在10个以内！</p>
+					<p class="window-btn">
+						<span id="addClass-btn" title="点击创建">
+						确定
+					</span></p>    	
+				</div>
+				<div class="window-alert">
+					<p class="alert-tips">任务还未保存，退出编辑？</p>
+					<p><span id="alert-btn">确定</span></p>
+				</div>
+			</div>
+		</div>
+
+	<script type="text/javascript" src="js/require.js" data-main="js/main"></script>
+</body>
+</html>

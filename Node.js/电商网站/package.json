@@ -1,0 +1,14 @@
+{
+  "name": "electricity",
+  "version": "1.0.0",
+  "description": "website",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "practise"
+  ],
+  "author": "echelon",
+  "license": "MIT"
+}

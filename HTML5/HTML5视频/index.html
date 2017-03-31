@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Video Telestrator Jukebox</title>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="raf-polyfill.js"></script>
+	<style type="text/css">
+       body{
+       	font-family: sans-serif;
+       	border: 0;
+       	margin: 0;
+       	padding: 0;
+       }
+       header{
+       	text-align: center;
+       }
+       #player{
+       	display: table;
+       	width: 100%;
+       	padding: 4px;
+       }
+       #player>div,#palyer>nav{
+       	display: table-cell;
+       	vertical-align: top;
+       }
+       #player canvas{
+       	display: block;
+       }
+       #player menu,#player label{
+       	display: inline-block;
+       	padding: 0;
+       }
+       input[type=number]{
+       	width: 36px;
+       }
+	</style>
+</head>
+<body>
+	<header>
+		<h1>HTML5 VEDIO</h1>
+	</header>
+	<section id="player">
+		<div>
+			<video src="http://html5inaction.com/app/ch8/videos/VID_20120122_133036.mp4" controls width="720" height="480">U browser does not support!<a href="http://html5inaction.com/app/ch8/videos/VID_20120122_133036.mp4">downloading here</a></video>
+		</div>
+	</section>
+</body>
+</html>

@@ -1,0 +1,356 @@
+
+/*--------------Common stylesheet------------------*/
+*{
+	margin: 0;
+	padding: 0;
+} 
+html {
+    height: 100%;
+    min-height: 300px;
+}
+body {
+	font: 14px/1.5 "Microsoft YaHei",Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	height: 100%;
+}
+@font-face {
+    font-family: "icon";
+    src: url(../font/icomoon.eot) format("embedded-opentype")
+         ,url(../font/icomoon.woff) format("woff")
+         ,url(../font/icomoon.svg) format("svg")
+         ,url(../font/icomoon.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+.wraper{
+	min-height: 400px;
+	min-width: 1000px;
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+
+/*-------------------header stylesheet-------*/
+header{
+	background: #376956;
+}
+header h3{
+	line-height:60px;
+	text-align: center;
+	color: #fff;
+
+}
+
+/*-----------------container stylesheet--------------*/
+.container{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 60px;
+}
+
+
+/*---------------------classify stylesheet--------------*/
+.classify{
+	float: left;
+	position: relative;
+	width: 24%;
+	height: 100%;
+	min-width: 250px;
+	min-height: 340px;
+	background: #ffffe4; 
+}
+.section1-con{
+	padding: 10px;
+}
+.section1-con h3{
+    margin: 10px 0;
+}
+.all-task:before{
+	content: "\e9c9";
+	font-family: 'icon';
+	margin-right: 6px;
+}
+.all-task-list:before{
+	content: "\ea77";
+	font-family: 'icon';
+	margin-right: 6px;
+}
+
+/*----------------JsAddingCss--------------*/
+
+
+
+/*----------------JsAddingCss End--------------*/
+
+.btn{
+	position: absolute;
+	background: #43486e;
+	line-height: 40px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+    padding-left: 50px;
+    transition: color 0.5s ease 0s;
+    cursor: pointer;
+    color: #fff;
+    font-size: 20px;
+}
+.btn:hover{
+	color: pink;
+}
+
+/*-----------------------all-task-list stylesheet-----------*/
+
+.task-classify{
+	float: left;
+	height: 100%;
+	width: 24%;
+	min-height:340px;
+    min-width: 248px;
+    border-left: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+    position: relative;
+}
+.task-nav{
+	height: 40px;
+	border-bottom: 1px solid #cdcdcd;
+	background: #dcf;
+}
+.task-nav span{
+	color: #3e3e3e;
+	display: inline-block;
+	line-height: 28px;
+	margin: 5px 6%;
+	padding: 0px 2%;
+}
+.task-nav .click{
+	background: #ffc;
+	color: #000;
+	border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+}
+.task-nav span:hover{
+	cursor: pointer;
+	background: #fcfcfc;
+	color: #000000;
+	border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+}
+
+
+/*----------------------task-detail stylesheet--------*/
+.task-detail{
+	float: left;
+	width: 50%;
+	height: 100%;
+	min-height:340px;
+    min-width: 500px; 
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.detail{
+	height: 100%;
+	position: relative;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.detail-title{
+	line-height: 60px;
+	font-size: 22px;
+	border-bottom: 1px solid #ddd;
+    padding-left: 20px;
+}
+.detail-title:before{
+	font-family: "icon";
+	content: "\e946";
+	margin-right: 10px;
+}
+.detail-date{
+	line-height: 50px;
+	padding-left: 20px;
+	font-size: 16px;
+	border-bottom: 1px solid #ddd;
+}
+.detail-date:before{
+	font-family: "icon";
+	content: "\e953";
+	margin-right: 15px;
+}
+.detail-con{
+	padding: 2%;
+	height: 80%;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.detail-operate{
+	position: absolute;
+	top: 0;
+	right: 10px;
+	font-family: "icon";
+	font-size: 20px;
+    display: none;
+}
+.doing .detail-operate{
+	display: block;
+}
+#detail-icon-done,#detail-icon-edit{
+	transition: color 0.5s ease 0s;
+	color: #FF6633;
+	margin: 10px;
+	display: inline-block;
+	line-height: 50px;
+	text-align: center;
+	width: 60px;
+}
+#detail-icon-done:hover,#detail-icon-edit:hover{
+	color: #f30055;
+	cursor: pointer;
+}
+
+
+/*-----------------detail-edit stylesheet-----------*/
+.edit{
+	display: none;
+	height: 100%;
+	overflow-y:auto;
+	position: relative;
+    overflow-x: hidden; 
+}
+
+
+
+/*-----------------------window mask stylesheet----------------*/
+.window{
+	display: none;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+}
+.window-mask{
+	background: #2e2e2e;
+	height: 100%;
+	width: 100%;
+	opacity: 0.6;
+}
+.window-cont{
+	position: absolute;
+	width: 400px;
+	height: 200px;
+	margin-left: -200px;
+	margin-top: -100px;
+	left: 50%;
+	top: 50%;
+	-moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+}
+
+/*------------------新增分类按钮弹窗样式--------*/
+.window-cont-addClass{
+	padding: 10px;
+}
+.window-cont-addClass p{
+	text-align: center;
+}
+.addClassLine{
+	line-height: 50px;
+	height: 50px;
+	display: inline-block;
+}
+#class-select,#class-name{
+	border: 1px solid #2ef;
+	width: 160px;
+	height: 20px;
+	line-height: 20px;
+	display: inline-block;
+}
+#class-select{
+	height: 24px;
+}
+.window-tips{
+	color: #999;
+}
+.window-btn{
+	margin-top: 20px;
+}
+.addClass-btn{
+	display: inline-block;
+	height: 36px;
+    width: 94px;
+    line-height: 36px;
+    background: #eb5b17;
+    color: #fff;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.addClass-btn:hover{
+	background: #ea4107; 
+}
+.close{
+	display: absolute;
+	top: 6px;
+	right: 9px;
+	border: 2px solid #fff;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	cursor: pointer;
+}
+.close:hover {
+    color: #FF3366;
+    border: 2px solid #FF3366;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -o-border-radius: 20px;
+    -ms-border-radius: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.close-icon{
+	font-family: 'icon';
+}
+
+/*--------alert弹窗样式--------------*/
+.window-alert{
+	padding: 10px;
+	display: none;
+	margin-top: 30px;
+}
+.window-alert p{
+	line-height: 60px;
+	text-align: center;
+}
+#alert-btn{
+	display: inline-block;
+	height: 36px;
+    width: 94px;
+    line-height: 36px;
+    background: #eb5b17;
+    color: #ffffff;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#alert-btn:hover {
+    background: #ea4107;
+}
